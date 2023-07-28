@@ -68,28 +68,28 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
   distance = duration/58.2;
 
-  if ( distance <= 2 )
+  if ( distance <= 5 )
   {
     digitalWrite(LED1, HIGH);
   }
   else{
     digitalWrite(LED1, LOW);
   }
-  if ( distance <= 5 )
+  if ( distance <= 8 )
   {
     digitalWrite(LED2, HIGH);
   }
   else{
     digitalWrite(LED2, LOW);
   }
-  if ( distance <= 8 )
+  if ( distance <= 11 )
   {
     digitalWrite(LED3, HIGH);
   }
   else{
     digitalWrite(LED3, LOW);
   }
-  if ( distance <= 11 )
+  if ( distance <= 14 )
   {
     digitalWrite(LED4, HIGH);
   }
